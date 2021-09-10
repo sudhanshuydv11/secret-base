@@ -1,0 +1,29 @@
+<%- include('partials/header') %>
+
+<div class="container">
+  <div class="jumbotron centered">
+    <i class="fas fa-key fa-6x"></i>
+    <h1 class="display-3">My Precious</h1>
+    
+    
+
+    <form action="/submit" method="POST">
+      <div class="form-group">
+        <label for="email">Head</label>
+        <input type="text" class="form-control" name="head">
+      </div>
+      <div class="form-group">
+        <label>Username/Email</label>
+        <input type="text" class="form-control" name="un">
+      </div>
+      <div class="form-group">
+        <label >Password</label>
+        <input type="text" class="form-control" name="pss">
+      </div>
+      <button type="submit" class="btn btn-dark">ADD</button>
+    </form>
+
+
+  </div>
+</div>
+<%- include('partials/footer') %>
